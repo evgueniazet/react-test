@@ -1,0 +1,38 @@
+@import './variables.scss';
+
+.app {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $bg;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.iconWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px $primary;
+    border-radius: 5px;
+    padding: 40px 10px;
+    height: 20px;
+}
+
+.app .button {
+    background-color: $primary;
+    transition: background-color .3s ease;
+    margin-top: 20px;
+    width: 170px;
+
+
+    &:hover {
+        background-color: $secondary;
+        transition: background-color .3s ease;
+    }
+}
